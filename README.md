@@ -22,7 +22,7 @@ In general the timer box firmware sits in the main while loop wating for a comma
 
 * See [host/README.md](host/README.md)
 
-##Prototype project from 2006. 
+## Prototype project from 2006. 
 
 > Some changes have been made that were not included in the notes at the link given below. Details
 will be added to this README.md file to reflect the photogate timer box as is currently used.
