@@ -12,12 +12,12 @@ See the file PhotogateLV.c
 
 Modified in 2014 for XC8 compiler and to use an external clock
 
-##Prototype project from 2006. 
+## Prototype project from 2006. 
 
 > Some changes have been made that were not included in the notes at the link given below. Details
 will be added to this README.md file to reflect the photogate timer box as is currently used.
 
-* [Photogate Box Notes from 2006-2007](http://www.kwantlen.ca/science/physics/faculty/dpeirce/notes/timer_box/)
+* [Photogate Box Notes from 2006-2007](https://danpeirce.github.io/2006/timer_box/index.html)
 
 ## PIC Wiring
 
