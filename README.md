@@ -24,7 +24,7 @@ it as a hex file. If a new photogate timer box is to be constructed and programm
 
 * [hex/timer_box_PIC18F2620.hex](hex/timer_box_PIC18F2620.hex)
 
-There is a six pin programming header on the PIC board in the lasergate box available for programming. In 2023 the MPlab IPE 
+There is a six pin programming header on the PIC board in the photogate timer box available for programming. In 2023 the MPlab IPE 
 still works with a PICkit3.
 
 ## Communication between Timer Box and Host
