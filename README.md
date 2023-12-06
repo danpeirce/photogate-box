@@ -66,14 +66,14 @@ ascii --> ?10021
                    '1' gate one
 ~~~~
 
-* See [host/README.md](host/README.md)
-
 then I passed a finger through the photogate (gate 1). About ten seconds later I passed my finger through the 
 photogate (gate 1) again.
 
 Put CoolTerm in Binary mode
 
 ![](image/example_test_hex_output.png)
+
+So that is hex 017D12DA - 00DCBC11 which works out to 10,597,977 microSeconds.
 
 ## Prototype project from 2006. 
 
