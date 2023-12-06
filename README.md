@@ -77,6 +77,9 @@ The PIC inputs and outputs as defined in the source code
 
 The status LED was dropped from the design as comments were no one was looking at it and dropping it saved time building the units.  
 
+### Parts List
+
+* [Link to Parts List](https://github.com/danpeirce/pic-box-bracket#other-parts-for-the-project)
 
 ## Microchip Documents
 
