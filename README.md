@@ -14,11 +14,22 @@ There is also a [branch for the PIC18F4525 MCU](https://github.com/danpeirce/pho
 The source code for this project is in C and is licensed under the [GNU GPL v3](http://www.gnu.org/licenses/gpl-3.0.txt).
 See the file PhotogateLV.c
 
-Modified in 2014 for XC8 compiler and to use an external clock
+Modified in 2014 for XC8 compiler and to use an external clock.
+
+### Added existing HEX file to project Files
+
+Since this code has been working fine and was compiled years ago with an old compiler version and legacy peripheral 
+libraries that we stooped using a number of years ago I have use a PICkit3 to read the memory of the existing unit and saved 
+it as a hex file. If a new photogate timer box is to be constructed and programmed with this hex file.
+
+* [hex/timer_box_PIC18F2620.hex](hex/timer_box_PIC18F2620.hex)
+
+There is a six pin programming header on the PIC board in the lasergate box available for programming. In 2023 the MPlab IPE 
+still works with a PICkit3.
 
 ## Communication between Timer Box and Host
 
-In general the timer box firmware sits in the main while loop wating for a command from the host. A command always starts with a question mark followed by a single numeric character. The rest of the command is command dependent. Onces times have been aquired by the timer box they are sent to the host as four byte binary values.
+In general the timer box firmware sits in the main while loop waiting for a command from the host. A command always starts with a question mark followed by a single numeric character. The rest of the command is command dependent. Onces times have been aquired by the timer box they are sent to the host as four byte binary values.
 
 * See [host/README.md](host/README.md)
 
