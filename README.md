@@ -42,7 +42,10 @@ will be added to this README.md file to reflect the photogate timer box as is cu
 
 ## PIC Wiring
 
-![image of 2014 prototype](image/board_test01.jpg)
+![](image/wiring.jpg)
+
+There are traces on the board for the 5Vdc rail and ground rail running the length of the protoboard directly under the PIC IC (between the pins). 
+The rest of the layout is like a solderless breadboard with 5 hole tie points running from near the power rails to the edges of the board.
 
 The PIC inputs and outputs as defined in the source code
 
@@ -67,8 +70,11 @@ The PIC inputs and outputs as defined in the source code
   TRISCbits.TRISC2 = 1;     // set RC2(CCP1) as input
   TRISBbits.TRISB3 = 1;     // set RB3(CCP2) as input 
 ```
-  
-...more details to come.
+
+![image of 2014 prototype](image/board_test01.jpg)
+
+The status LED was dropped from the design as comments were no one was looking at it and dropping it saved time building the units.  
+
 
 ## Microchip Documents
 
