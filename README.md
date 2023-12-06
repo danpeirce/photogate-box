@@ -71,6 +71,8 @@ The PIC inputs and outputs as defined in the source code
   TRISBbits.TRISB3 = 1;     // set RB3(CCP2) as input 
 ```
 
+![image/pic18f2620_pins.png](image/pic18f2620_pins.png)
+
 ![image of 2014 prototype](image/board_test01.jpg)
 
 The status LED was dropped from the design as comments were no one was looking at it and dropping it saved time building the units.  
