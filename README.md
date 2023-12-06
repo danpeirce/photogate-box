@@ -29,9 +29,51 @@ still works with a PICkit3.
 
 ## Communication between Timer Box and Host
 
-In general the timer box firmware sits in the main while loop waiting for a command from the host. A command always starts with a question mark followed by a single numeric character. The rest of the command is command dependent. Onces times have been aquired by the timer box they are sent to the host as four byte binary values.
+In general the timer box firmware sits in the main while loop waiting for a command from the host. A command always starts with a question 
+mark followed by a single numeric character. The rest of the command is command dependent. Onces times have been aquired by the timer box 
+they are sent to the host as four byte binary values.
+
+### Testing Timerbox with Coolterm
+
+Coolterm can be used to test if a tiemrbox is working for troubleshooting.
+
+The COM port used will vary from computer to computer. The baud rate and other serial port settings as below:
+
+![](image/coolterm_settings.png)
+
+To check the status of the two photogates I just type
+ascii -->   **?0**
+
+And it immediately responds with:
+
+**0** if both gates unblocked
+**1** if gate one blocked and gate two unblocked
+**2** if gate one unblocked and gate two blocked
+**3** if both gates blocked.
+
+Notes 
+
+* CoolTerm is showing only characters received not what was sent)
+* for that test I use CoolTerm in ASCII mode.
+
+To get the **times of two edges** copy and paste from Notepad into the CoolTerm window
+
+~~~~
+ascii --> ?10021    
+      that is '?' -- next character is command
+                   '1' -- falling edges
+                   "002" two edges
+                   '1' gate one
+~~~~
 
 * See [host/README.md](host/README.md)
+
+then I passed a finger through the photogate (gate 1). About ten seconds later I passed my finger through the 
+photogate (gate 1) again.
+
+Put CoolTerm in Binary mode
+
+![](image/example_test_hex_output.png)
 
 ## Prototype project from 2006. 
 
@@ -91,4 +133,3 @@ Photo of PCB's mounted on bracket plate which is mounted on the box lid. More de
 
 ![Photo of PCB's mounted on bracket plate which is mounted on the box lid](image/boards-mounted-bracket.jpg)
 
-...more to come later...
